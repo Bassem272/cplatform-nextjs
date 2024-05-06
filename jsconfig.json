@@ -1,7 +1,10 @@
+
 {
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "allowJs": true,  // Allow JavaScript files to be included
+    "jsx": "react-jsx", // Specify the JSX factory (e.g., react, preact, etc.)
   }
 }
