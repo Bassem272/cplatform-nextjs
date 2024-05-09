@@ -2,10 +2,12 @@ import React from "react";
 import RootLayout from '../../layout';
 
 function OneD() {
+  const handleClick = ()=> document.getElementById('my_modal_2').showModal();
+  
   return (
    
     <>
-    <RootLayout >
+    {/* <RootLayout > */}
     <div data-theme="luxury" className="navbar ">
   <div className="navbar-start">
     <div className="dropdown">
@@ -47,8 +49,8 @@ function OneD() {
 </div>
 {/* cors >>>>>>>>>>>>>>>>>>>>>>>>____________>>>>>>*/}
 {/* Open the modal using document.getElementById('ID').showModal() method */}
-<button className="btn" onClick={()=>document.getElementById('my_modal_2').showModal()}>open modal</button>
-<dialog id="my_modal_2" className="modal">
+{/* <button className="btn" onClick={handleClick}>open modal</button> */}
+{/* <dialog id="my_modal_2" className="modal">
   <div className="modal-box">
     <h3 className="font-bold text-lg">Hello!</h3>
     <p className="py-4">Press ESC key or click outside to close</p>
@@ -56,9 +58,9 @@ function OneD() {
   <form method="dialog" className="modal-backdrop">
     <button>close</button>
   </form>
-</dialog>
+</dialog> */}
 {/*  modal >>>>>>>>>>>>>>>>>>>>>>>>____________>>>>>>*/}
-<div className="carousel w-full">
+{/* <div className="carousel w-full">
   <div id="slide1" className="carousel-item relative w-full">
     <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -87,7 +89,7 @@ function OneD() {
       <a href="#slide1" className="btn btn-circle">❯</a>
     </div>
   </div>
-</div>
+</div> */}
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">go there </a>
         <div suppressHydrationWarning={true} >OneD
         </div>
@@ -107,7 +109,7 @@ function OneD() {
 
   <input type="file" class="file-input file-input-bordered file-input-secondary w-full max-w-xs" />
 
-     </RootLayout>
+     {/* </RootLayout> */}
 </>
 
   );
